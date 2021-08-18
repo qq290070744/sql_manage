@@ -12,33 +12,33 @@ mysql_pwd = os.getenv('mysql_pwd')
 mysql_db = os.getenv('mysql_db')
 
 if os.getenv('PYTHONENV') == 'prod':
-    SECRET_KEY = "6f998b1564aee153e8fc375ea1cdecdd6c40489611ad56cc32f3135b1bf47cd7"
+    SECRET_KEY = "6f998b1564aee153e8fc375ea1cdecd56c40489611ad56cc32f3135b1bf47cd7"
     if not mysql_host:
-        mysql_host = '10.157.36.11'
+        mysql_host = 'xxxxx'
     if not mysql_port:
         mysql_port = 6033
     if not mysql_user:
-        mysql_user = 'mysqladmin'
+        mysql_user = 'xxxx'
     if not mysql_pwd:
         mysql_pwd = '123456'
     if not mysql_db:
         mysql_db = 'sql_audit'
 elif os.getenv('PYTHONENV') == 'stage':
-    SECRET_KEY = "6f998b1564aee153e8fc375ea1cdecdd6c40489611ad56cc32f3135b1bf47cd8"
-    mysql_host = '10.157.24.59'
+    SECRET_KEY = "6f998b1564aee153e8fc375ea1cdecdd5c40489611ad56cc32f3135b1bf47cd8"
+    mysql_host = 'xxxxxxxxx'
     mysql_port = 3306
-    mysql_user = 'system'
-    mysql_pwd = 'root123'
-    mysql_db = 'monitor'
+    mysql_user = 'xxxxx'
+    mysql_pwd = 'xxxxx'
+    mysql_db = 'xxxxxxx'
 elif os.getenv('PYTHONENV') == 'aliyun_stage':
-    SECRET_KEY = "6f998b1564aee153e8fc375ea1cdecdd6c40489611ad56cc32f3135b1bf47cd8"
-    mysql_host = '10.157.24.59'
+    SECRET_KEY = "6f99851564aee153e8fc375ea1cdecdd6c40489611ad56cc32f3135b1bf47cd8"
+    mysql_host = 'xxxxxxx'
     mysql_port = 3306
-    mysql_user = 'system'
-    mysql_pwd = 'root123'
-    mysql_db = 'monitor'
+    mysql_user = 'xxxxxx'
+    mysql_pwd = 'xxxxxxxx'
+    mysql_db = 'xxxxxxx'
 else:
-    SECRET_KEY = "6f998b1564aee153e8fc375ea1cdecdd6c40489611ad56cc32f3135b1bf47cd8"
+    SECRET_KEY = "6f998b1564aee153e8fc375ea5cdecdd6c40489611ad56cc32f3135b1bf47cd8"
     if not mysql_host:
         mysql_host = '127.0.0.1'
     if not mysql_port:
