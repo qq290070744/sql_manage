@@ -7,7 +7,11 @@
 软件架构说明
 - **goInception**: hanchuanchuan开源，提供SQL语句审核、执行、回滚功能
 - **SOAR**: 小米开源，提供SQL启发式算法的语句优化、多列索引优化等功能
-
+#### 安装
+docker build -t sql_platform .
+docker run --name sql_platform -p 8000:8000 -e PYTHONENV=prod -e mysql_host=xxx -e mysql_port=3306 -e mysql_user=root -e mysql_pwd=123456 -e mysql_db=sql_platform -e inception_host=127.0.0.1 -e inception_port=4000  -d sql_platform
+导入表结构
+mysql -uroot -p123456 -D sql_platform < table.sql
 
 ## 功能简介
 
