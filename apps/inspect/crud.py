@@ -105,10 +105,9 @@ def get_approver_data_export(db: Session, user: UserOut):
                                                                                 User.id != user.id).all()
         elif role.role == 'admin':
             manager = db.query(User).join(Role, User.role_id == Role.id).filter(Role.role == 'DBA').all()
-        elif user.username in ('Ligen', 'Dengchao', 'andy',):
-            manager = db.query(User).join(Role, User.role_id == Role.id).filter(Role.role == 'DBA').all()
         else:
-            manager = db.query(User).filter(User.username.in_(['Ligen', 'Dengchao', 'andy', 'Dave'])).all()
+            manager = db.query(User).join(Role, User.role_id == Role.id).filter(Role.department == role.department,
+                                                                                Role.role == '主管').all()
         dba = db.query(User).join(Role, User.role_id == Role.id).filter(Role.role == 'DBA').all()
         return {'data': {'manager': manager, 'dba': dba}, 'msg': 'success'}
     except Exception as e:
