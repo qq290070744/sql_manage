@@ -101,7 +101,7 @@ menu_list = {
             instances, instance_monitor, processlist, tablesapce, innodb_trx, trxandlocks, instanceaccount, param_list
         ]},
         {'id': 1, 'title': 'SQL 执行', 'icon': 'el-icon-s-promotion', 'children': [
-            select, inspect, get_sales_order, exec_shell
+            select, inspect, exec_shell
         ]},
         {'id': 2, 'title': '权限管理', 'icon': 'iconfont icon-quanxianguanli', 'children': [
             roles, users
@@ -124,7 +124,7 @@ menu_list = {
             instances, instance_monitor, processlist, tablesapce, innodb_trx, trxandlocks, instanceaccount, param_list
         ]},
         {'id': 1, 'title': 'SQL 执行', 'icon': 'el-icon-s-promotion', 'children': [
-            select, inspect, get_sales_order, exec_shell
+            select, inspect, exec_shell
         ]},
         {'id': 2, 'title': '权限管理', 'icon': 'iconfont icon-quanxianguanli', 'children': [
             roles, users
@@ -147,7 +147,7 @@ menu_list = {
             instance_monitor
         ]},
         {'id': 1, 'title': 'SQL 执行', 'icon': 'el-icon-s-promotion', 'children': [
-            select, inspect, get_sales_order
+            select, inspect
         ]},
         {'id': 3, 'title': '工单管理', 'icon': 'iconfont icon-gongdanguanli', 'children': [
             pending, workorder, historyorder, workorder_data_export, historyorder_data_export
@@ -161,7 +161,7 @@ menu_list = {
             instance_monitor
         ]},
         {'id': 1, 'title': 'SQL 执行', 'icon': 'el-icon-s-promotion', 'children': [
-            select, inspect, get_sales_order
+            select, inspect, 
         ]},
         {'id': 3, 'title': '工单管理', 'icon': 'iconfont icon-gongdanguanli', 'children': [
             workorder, workorder_data_export
