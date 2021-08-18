@@ -5,8 +5,8 @@
 ![Alt text](1.png)
 #### 软件架构
 软件架构说明
-- **goInception**: hanchuanchuan开源，提供SQL语句审核、执行、回滚功能
-- **SOAR**: 小米开源，提供SQL启发式算法的语句优化、多列索引优化等功能
+- **[goInception](https://github.com/hanchuanchuan/goInception)**: hanchuanchuan开源，提供SQL语句审核、执行、回滚功能  
+- **[SOAR](https://github.com/XiaoMi/soar)**: 小米开源，提供SQL启发式算法的语句优化、多列索引优化等功能
 #### 安装
 ```
 docker build -t sql_platform .
@@ -69,3 +69,7 @@ mysql -uroot -p123456 -D sql_platform < table.sql
 ![Alt text](6.png)
 - 用户管理
 ![Alt text](7.png)
+
+#### 二次开发
+这里只面包含了后端的代码，如果需要二次开发前端，下面就提供了前端代码的链接地址 
+[sql平台前端源码](https://github.com/XiaoMi/soar)
