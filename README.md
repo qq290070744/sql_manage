@@ -72,4 +72,4 @@ mysql -uroot -p123456 -D sql_platform < table.sql
 
 #### 二次开发
 这里只面包含了后端的代码，如果需要二次开发前端，下面就提供了前端代码的链接地址 
-[sql平台前端源码](https://github.com/XiaoMi/soar)
+- [sql平台前端源码](https://gitee.com/jiangwenhui_admin/sql_shop)
