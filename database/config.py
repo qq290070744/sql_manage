@@ -10,6 +10,8 @@ mysql_port = os.getenv('mysql_port')
 mysql_user = os.getenv('mysql_user')
 mysql_pwd = os.getenv('mysql_pwd')
 mysql_db = os.getenv('mysql_db')
+if mysql_port:
+    mysql_port = int(mysql_port)
 
 if os.getenv('PYTHONENV') == 'prod':
     SECRET_KEY = "6f998b1564aee153e8fc375ea1cdecd56c40489611ad56cc32f3135b1bf47cd7"
