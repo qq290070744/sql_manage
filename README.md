@@ -15,6 +15,7 @@ docker run --name sql_platform -p 8000:8000 -e PYTHONENV=prod -e mysql_host=xxx 
 #导入表结构
 mysql -uroot -p123456 -D sql_platform < table.sql
 ```
+访问 ip:8000  用户：admin 密码:admin123
 ## 功能简介
 
 - 目标库管理
