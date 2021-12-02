@@ -448,7 +448,7 @@ GROUP BY DATE_FORMAT(IF(t.type = 8,
         '''.format(date_time, date_time)
         user, pwd, host, port = 'system', 'root123', '10.157.24.59', 3306
         if os.getenv('PYTHONENV') == 'prod':
-            user, pwd, host, port = 'sql_audit', 'Sql_@#Audit2ws', '10.157.36.7', 3306
+            user, pwd, host, port = 'xxxxxxxx', 'xxxxxxx', '10.157.36.7', 3306
         data = exec_distal_sql_dict(sql, user, pwd, host, port, 'oms')
         return {'data': data, 'msg': 'success', }
     except Exception as e:
